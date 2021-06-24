@@ -1,0 +1,4 @@
+/.vscode
+/workspace.code-workspace
+/myspider/myspider/__pycache__
+/myspider/myspider/spiders/__pycache__
