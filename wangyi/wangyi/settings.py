@@ -1,4 +1,4 @@
-# Scrapy settings for myspider project
+# Scrapy settings for wangyi project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,17 +7,17 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'myspider'
+BOT_NAME = 'wangyi'
 
-SPIDER_MODULES = ['myspider.spiders']
-NEWSPIDER_MODULE = 'myspider.spiders'
+SPIDER_MODULES = ['wangyi.spiders']
+NEWSPIDER_MODULE = 'wangyi.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'myspider (+http://www.yourdomain.com)'
+#USER_AGENT = 'wangyi (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -45,13 +45,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'myspider.middlewares.MyspiderSpiderMiddleware': 543,
+#    'wangyi.middlewares.WangyiSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'myspider.middlewares.MyspiderDownloaderMiddleware': 543,
+#    'wangyi.middlewares.WangyiDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'myspider.pipelines.MyspiderPipeline': 300,
+    'wangyi.pipelines.WangyiPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)

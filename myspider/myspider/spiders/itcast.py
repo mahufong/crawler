@@ -1,4 +1,5 @@
 import scrapy
+from myspider.items import MyspiderItem
 
 
 class ItcastSpider(scrapy.Spider):
@@ -16,9 +17,10 @@ class ItcastSpider(scrapy.Spider):
         li_list = response.xpath('//div[@class="tea_con"]//li') 
         for li in li_list:
             # 创建一个数据字典
-            item = {}
+            #item = {}
+            item = MyspiderItem()
             # 利用scrapy封装好的xpath选择器定位元素，并通过extract()或extract_first()来获取结果
             item['name'] = li.xpath('.//h3/text()').extract_first() # 老师的名字
             item['level'] = li.xpath('.//h4/text()').extract_first() # 老师的级别
             item['text'] = li.xpath('.//p/text()').extract_first() # 老师的介绍
-            print(item)
+            yield item

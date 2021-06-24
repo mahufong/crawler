@@ -2,3 +2,7 @@
 /workspace.code-workspace
 /myspider/myspider/__pycache__
 /myspider/myspider/spiders/__pycache__
+wangyi/wangyi.json
+myspider/itcast.json
+wangyi/wangyi/__pycache__
+wangyi/wangyi/spiders/__pycache__
